@@ -1,0 +1,709 @@
+@font-face {
+    font-family: "Marons";
+    src: url(/Fonts/Marons-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "AlleyCat";
+    src: url(/Fonts/alleycat_icg.ttf) format('truetype');
+}
+
+@font-face{
+    font-family: "Manuale";
+    src: url(/Fonts/Manuale-Regular.ttf) format('truetype');
+}
+
+body {
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(176,222,244,1) 39%);
+    background-repeat: no-repeat;
+    margin: 0px;
+    font-family: Arial, sans-serif, 'Marons','AlleyCat','Manuale';
+}
+
+.normal-version {
+    display: block;
+}
+
+.phone-version {
+    display: none;
+}
+
+/* Header */
+
+#header-logo {
+    height: 40px;
+    width: auto;
+}
+
+.nav-container {
+    background-color: #15B2D3;
+    border-bottom: 3px solid black;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.nav-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-right a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    padding: 5px 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-right a:hover {
+    color: white;
+}
+
+/* Content */
+
+#Welcoming {
+    margin-top: 20px;
+    font-family: "Marons", Arial, sans-serif;
+    background-color: #15B2D3;
+    color: white;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 20px;
+    position: relative;
+    left: 5%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 2px 3px 1px black;
+    
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: -50px;
+}
+
+.hero-text {
+    width: 40%;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.hero-text h1 {
+    font-size: 90px;
+    margin-bottom: 20px;
+    font-family: "AlleyCat";
+}
+
+.hero-text p {
+    font-size: 40px;
+    line-height: 0.5;
+    margin-bottom: 20px;
+    font-family: "Marons";
+}
+
+.hero-button {
+    margin-top: 10px;
+    background-color: #40DDFF;
+    color: black;
+    padding: 20px 40px;
+    font-size: 25px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    left: 10%;
+    box-shadow: 3px 4px 2px black ;
+}
+
+.hero-button:hover {
+    background-color: #0d8aa8;
+}
+
+.hero-images {
+    position: relative;
+    width: 50%;
+    max-width: 770px;  
+}
+
+.hero-image-large {
+    width: 100%;
+    height: auto;
+    border: 15px solid white;
+    transform: rotate(-9.18deg);
+    box-shadow: 3px 4px 5px black
+}
+
+.hero-image-small {
+    position: absolute;
+    width: 55%;
+    max-width: 422px;
+    height: auto;
+    top: 0;
+    right: 43%;
+}
+
+#anothersquare1{
+    margin-top: 60px;
+    background-color: #40DDFF;
+    height: 10%;
+    width: 50%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+
+#anothersquare1 p{
+    padding-left: 30px;
+    font-family: "Manuale";
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.grid-container {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns:  repeat(5, 20%);
+    gap: 5%;
+    padding: 20px;
+    cursor: pointer;
+    overflow-x: scroll;
+}
+
+.grid-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 3px 4px 5px black
+}
+
+.songimage{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+    
+}
+
+.songimage:hover{
+    transform: scale(1.1);
+}
+
+#anothersquare2{
+    margin-top: 60px;
+    background-color: #40DDFF;
+    height: 76px;
+    width: 50%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#anothersquare2 p{
+    padding-left: 20px;
+    font-family: "Manuale";
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 200px;
+}
+
+
+
+#AllSongsButton{
+    margin-top: 10px;
+    background-color: #40DDFF;
+    color: black;
+    padding: 20px 40px;
+    font-size: 25px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 3px 4px 2px black ;
+}
+
+#AllSongsButton:hover{
+    background-color: #0d8aa8;
+}
+
+/*footer*/
+
+footer {
+    margin-top: 50px;
+    background-color: #15B2D3;
+    padding: 20px 0;
+    border-top: 3px solid black;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content.contact {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-content.social {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-content h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-content p {
+    color: black;
+    margin: 5px 0;
+}
+
+.footer-content .social-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-content .social-list li {
+    margin-left: 20px;
+}
+
+.social-icon-circle {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon-circle img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon-circle:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+   
+.hero-text {
+    width: 40%;
+    text-align: left;
+    
+}
+
+.hero-text h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    font-family: "AlleyCat";
+}
+
+.hero-text p {
+    font-size: 28px;
+    line-height: 0.5;
+    margin-bottom: 20px;
+    font-family: "Marons";
+}
+
+#anothersquare1 p{
+    padding-left: 30px;
+    font-family: "Manuale";
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+#anothersquare2 p{
+    font-family: "Manuale";
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 160px;
+}
+
+    
+}
+
+@media (max-width: 769px) {
+   
+    #Welcoming {
+        margin-top: 10px;
+        font-family: "Marons", Arial, sans-serif;
+        background-color: #15B2D3;
+        color: white;
+        border-radius: 20px;
+        display: inline-block;
+        font-size: 15px;
+        position: relative;
+        left: 5%;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-shadow: 2px 3px 1px black;
+        margin-bottom: 10px;
+        
+    }
+
+    .hero-text {
+        width: 60%;
+        margin-bottom: 20px;
+        text-align: left;
+        margin-left: 20px;
+       
+    }
+
+    .hero-text h1 {
+        
+        font-size: 50px;
+        margin-bottom: 20px;
+        font-family: "AlleyCat";
+    }
+    
+    .hero-text p {
+        font-size: 20px;
+        line-height: 0.5;
+        margin-bottom: 20px;
+        font-family: "Marons";
+    }
+    
+    .hero-button {
+        margin-top: 10px;
+        background-color: #40DDFF;
+        color: black;
+        padding: 15px 30px;
+        font-size: 15px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        position: static;
+        box-shadow: 3px 4px 2px black ;
+        left: 10%;
+    }
+
+    .hero-images {
+        width: 80%;
+    }
+
+    .hero-image-large {
+        width: 90%;
+    }
+
+    .hero-image-small {
+        position: absolute;
+        width: 55%;
+        max-width: 422px;
+        height: auto;
+        top: 0;
+        right: 43%;
+    }
+
+    #anothersquare1{
+        margin-top: 60px;
+        background-color: #40DDFF;
+        height: 46px;
+        width: 50%;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    #anothersquare1 p{
+        padding-left: 30px;
+        font-family: "Manuale";
+        font-size: 18px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+
+    #anothersquare2{
+        margin-top: 60px;
+        background-color: #40DDFF;
+        height: 46px;
+        width: 50%;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    #anothersquare2 p{
+        font-family: "Manuale";
+        font-size: 18px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 80px;
+    }
+
+    .grid-item {
+        background-color: white;
+        padding: 15px;
+        border-radius: 30px;
+        box-shadow: 3px 4px 5px black
+    }
+
+    #AllSongsButton{
+        margin-top: 20px;
+        background-color: #40DDFF;
+        color: black;
+        padding: 15px 30px;
+        font-size: 16px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        position: relative;
+        box-shadow: 3px 4px 2px black ;
+    }
+}
+
+@media (max-width: 426px) {
+
+    .normal-version {
+        display: none;
+    }
+    
+    .phone-version {
+        display: block;
+    }
+
+
+    #header-logo {
+        height: 20px;
+        width: auto;
+    }
+    
+    .nav-right a {
+        text-decoration: none;
+        font-size: 8px;
+        color: black;
+        padding: 5px 10px;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+    #Welcoming {
+        margin-top: 10px;
+        font-family: "Marons", Arial, sans-serif;
+        background-color: #15B2D3;
+        color: white;
+        border-radius: 20px;
+        display: inline-block;
+        font-size: 8px;
+        position: relative;
+        left: 5%;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-shadow: 2px 3px 1px black;
+        margin-bottom: 20px;
+        
+    }
+    
+    .hero {
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .hero-images {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .hero-image-large {
+        width: 80%;
+        border: 5px solid white;
+        box-shadow: 3px 4px 5px black;
+    }
+
+    .hero-image-small {
+        width: 40%;
+        margin-top: 10px;
+        box-shadow: 3px 4px 5px black;
+        right: 50%;
+    }
+
+    .hero-text {
+        width: 90%;
+        text-align: left;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+        font-family: "AlleyCat";
+    }
+    
+    .hero-text p {
+        font-size: 18px;
+        line-height: 1.2;
+        margin-bottom: 1px;
+        font-family: "Marons";
+    }
+    
+    .hero-button {
+        margin-top: 10px;
+        background-color: #40DDFF;
+        color: black;
+        padding: 8px 15px;
+        font-size: 12px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        box-shadow: 3px 4px 2px black;
+       
+    }
+
+    #anothersquare1{
+        margin-top: 10px;
+        background-color: #40DDFF;
+        height: 10%;
+        width: 80%;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        
+    }
+    
+    #anothersquare1 p{
+        padding-left: 20px;
+        font-family: "Manuale";
+        font-size: 12px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+    
+    .grid-container {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns:  repeat(5, 30%);
+        gap: 5%;
+        padding: 20px;
+        cursor: pointer;
+        overflow-x: scroll;
+        
+    }
+    .grid-item {
+        background-color: white;
+        padding: 7px;
+        border-radius: 15px;
+        box-shadow: 3px 4px 5px black
+        
+    }
+    
+    .songimage{
+        width: 100%;
+        height: 100%;
+        transition: transform 0.3s ease;
+        
+    }
+    
+    .songimage:hover{
+        transform: scale(1.1);
+    }
+    
+    #anothersquare2{
+        margin-top: 20px;
+        background-color: #40DDFF;
+        height: 10%;
+        width: 80%;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    
+    #anothersquare2 p{
+        padding-left: 20px;
+        font-family: "Manuale";
+        font-size: 12px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    #AllSongsButton{
+        margin-top: 25px;
+        background-color: #40DDFF;
+        color: black;
+        padding: 10px 20px;
+        font-size: 10px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        position: relative;
+        box-shadow: 3px 4px 2px black ;
+    }
+    
+    #AllSongsButton:hover{
+        background-color: #0d8aa8;
+    }
+
+    footer {
+        margin-top: 50px;
+        background-color: #15B2D3;
+        padding: 20px 0;
+        border-top: 3px solid black;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+    
+    .footer-content h3 {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    
+    .footer-content p {
+        color: black;
+        margin: 5px 0;
+        font-size: 10px;
+    }
+    
+    .social-icon-circle {
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .social-icon-circle img {
+        width: 60%;
+        height: auto;
+        transition: transform 0.3s ease;
+    }
+    
+    .social-icon-circle:hover img {
+        transform: scale(1.1);
+    }
+    
+}

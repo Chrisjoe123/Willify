@@ -1,14 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="/CSS/HomePage.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
-    <script>
-        window.location.href = "HTML/HomePage.html";
-    </script>
+    <script src="/JavaScript/HomePage.js"></script>
+    <title>HomePage</title>
 </head>
 <body>
-    <h1>Redirecting to HomePage...</h1>
+    <header>
+        <nav class="nav-container">
+            <div class="nav-left">
+                <a href="index.html"><img id="header-logo" src="/asset/Logo/logo.png" alt="Willify Logo"></a>
+            </div>
+            <div class="nav-right">
+                <a href="/HTML/RegisterPage.html">Register</a>
+                <a href="/HTML/SongsPage.html">Songs</a>
+                <a href="/HTML/AboutUs.html">About Us</a>
+            </div>
+        </nav>
+    </header>
+    <div id="Welcoming">
+        <h1>Welcome to Willify</h1>
+    </div>
+    <div class="normal-version">
+        <div class="hero">
+            <div class="hero-text">
+                <h1>Espresso</h1>
+                <p>In case you haven't heard yet,</p>
+                <p>Sabrina Carpenter's Espresso is out</p>
+                <p>now and ready to be your new favorite</p>
+                <p>tune!</p>
+                <button id="listenNowButton" class="hero-button">Listen Now</button>
+            </div>
+            <div class="hero-images">
+                <img class="hero-image-large" src="/asset/artist/Sabrina1.jpeg" alt="Sabrina Large">
+                <img class="hero-image-small" src="/asset/artist/sabrina2.png" alt="Sabrina Small">
+            </div>
+        </div>
+    </div>
+
+    <div class="phone-version">
+        <div class="hero">
+            <div class="hero-images">
+                <img class="hero-image-large" src="/asset/artist/Sabrina1.jpeg" alt="Sabrina Large">
+                <img class="hero-image-small" src="/asset/artist/sabrina2.png" alt="Sabrina Small">
+            </div>
+            <div class="hero-text">
+                <h1>Espresso</h1>
+                <p>In case you haven't heard yet, Sabrina Carpenter's Espresso is out now and ready to be your new favorite tune!</p>
+                <center><button id="listenNowButton" class="hero-button">Listen Now</button></center>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div id="anothersquare1">
+        <p>Timeless tunes from the 20th century</p>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <a href="/HTML/SongsDetailPageList/SongsDetailPage_EverybodyLovesSomebody.html"><img class="songimage" src="/asset/SongCover/Someone_Like_You.jpeg"></a>
+        </div>
+
+        <div class="grid-item">
+            <a href="/HTML/SongsDetailPageList/SongsDetailPage_PutYourHeadOnMyShoulder.html"><img class="songimage" src="/asset/SongCover/PutYourHeadOnMyShoulder.jpg"></a>
+        </div>
+
+        <div class="grid-item">
+            <a href="/HTML/SongsDetailPageList/SongsDetailPage_StrangersInTheNight.html"><img class="songimage" src="/asset/SongCover/FrankSinatra.jpg"></a>
+        </div>
+
+        <div class="grid-item">
+            <a href="/HTML/SongsDetailPageList/SongsDetailPage_LOVE.html"><img class="songimage" src="/asset/SongCover/L.O.V.E.jpeg"></a>
+        </div>
+
+        <div class="grid-item">
+            <a href="/HTML/SongsDetailPageList/SongsDetailPage_FallingInLove.html"><img class="songimage" src="/asset/SongCover/Can't_Help_Falling_In_Love.jpeg"></a>
+        </div>
+    </div>
+
+    <div id="anothersquare2">
+        <p>Best Seller Song</p>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <a href="/HTML/SongsDetailPageList/SongsDetailPage_ItsDifferentNow.html"><img class="songimage" src="/asset/SongCover/PTX_LuckyOnes.jpg"></a>
+        </div>
+
+        <div class="grid-item">
+            <a href="/HTML/SongsDetailPageList/SongsDetailPage_UntilIFoundYou.html"><img class="songimage" src="/asset/SongCover/Until_I_Found_You.jpeg"></a>
+        </div>
+
+        <div class="grid-item">
+            <a href="/HTML/SongsDetailPageList/SongsDetailPage_TattooedHeart.html"><img class="songimage" src="/asset/SongCover/YoursTruly.png"></a>
+        </div>
+        
+        <div class="grid-item">
+            <a href="/HTML/SongsDetailPageList/SongsDetailPage_Espresso.html"><img class="songimage" src="/asset/SongCover/Espresso.jpeg"></a>
+        </div>
+
+        <div class="grid-item">
+            <a href="/HTML/SongsDetailPageList/SongsDetailPage_Perfect.html"><img class="songimage" src="/asset/SongCover/Divide.png"></a>
+        </div>
+    </div>
+    <center>
+        <div>
+            <button id="AllSongsButton">View More Songs</button>
+        </div>
+    </center>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content contact">
+                <p>Willify is a music player with a lot of your favorite songs</p>
+                <h3>Contact Us</h3>
+                <p>Email : Willify@email.com</p>
+                <p>Phone : 123456789</p>
+            </div>
+            <div class="footer-content social">
+                <h3>Follow Us on Social Media</h3>
+                <ul class="social-list">
+                    <li>
+                        <a href="#">
+                            <div class="social-icon-circle">
+                                <img src="/asset/Logo/instagram.webp" alt="Instagram">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="social-icon-circle">
+                                <img src="/asset/Logo/twitterlogo.png" alt="X">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
